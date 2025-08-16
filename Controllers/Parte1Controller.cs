@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProvaPub.Services;
+using ProvaPub.Services.Interfaces;
 
 namespace ProvaPub.Controllers
 {
@@ -12,16 +13,29 @@ namespace ProvaPub.Controllers
 	[Route("[controller]")]
 	public class Parte1Controller :  ControllerBase
 	{
-		private readonly RandomService _randomService;
+		private readonly IRandomService _randomService;
 
-		public Parte1Controller(RandomService randomService)
+		public Parte1Controller(IRandomService randomService)
 		{
 			_randomService = randomService;
 		}
-		[HttpGet]
-		public async Task<int> Index()
-		{
-			return await _randomService.GetRandom();
-		}
-	}
+
+        [HttpGet]
+        public async Task<IActionResult> Index()
+        {
+            try
+            {
+                var number = await _randomService.GetRandomAsync();
+                return Ok(new { Number = number });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "Ocorreu um erro inesperado.", Details = ex.Message });
+            }
+        }
+    }
 }
