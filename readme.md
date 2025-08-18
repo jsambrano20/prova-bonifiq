@@ -1,6 +1,11 @@
 # Prova BonifiQ Backend
 Olá! Essa prova foi entregue.
 
+## Melhorias Possiveis
+- Injeção de dependência mais clean
+- Teste unitários
+- Serviços e repositórios
+
 ## Trabalho
 
 ### Parte1Controller
