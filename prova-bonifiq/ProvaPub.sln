@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaPub", "ProvaPub.csproj", "{BF0C6C17-A860-47B0-BF84-1FBB2E26742A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaPub.Tests", "ProvaPub.Tests\ProvaPub.Tests.csproj", "{3EECF7FD-8B48-4AA1-927C-FE933B4FAC8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaPub.Tests", "..\tests\ProvaPub.Tests.csproj", "{B8FD4FD0-58B4-49E5-AB86-B157D21C91FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{BF0C6C17-A860-47B0-BF84-1FBB2E26742A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF0C6C17-A860-47B0-BF84-1FBB2E26742A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF0C6C17-A860-47B0-BF84-1FBB2E26742A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3EECF7FD-8B48-4AA1-927C-FE933B4FAC8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3EECF7FD-8B48-4AA1-927C-FE933B4FAC8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3EECF7FD-8B48-4AA1-927C-FE933B4FAC8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3EECF7FD-8B48-4AA1-927C-FE933B4FAC8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8FD4FD0-58B4-49E5-AB86-B157D21C91FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FD4FD0-58B4-49E5-AB86-B157D21C91FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FD4FD0-58B4-49E5-AB86-B157D21C91FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8FD4FD0-58B4-49E5-AB86-B157D21C91FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

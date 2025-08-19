@@ -23,7 +23,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\ProvaPub.csproj" />
+	  <ProjectReference Include="..\prova-bonifiq\ProvaPub.csproj" />
 	</ItemGroup>
 
 </Project>
